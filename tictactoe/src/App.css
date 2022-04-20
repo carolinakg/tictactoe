@@ -1,38 +1,75 @@
-.App {
+*{
   text-align: center;
+  background-color: antiquewhite;
+
+}
+.board{
+  width: 75vw;
+  height: 75vw;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  margin: 15px auto;
+  padding: 0;
+  justify-content: space-evenly;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.square{
+  width: calc(25vw - 1.5px);
+  height: calc(25vw - 1px);
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.square img{
+  max-width: 65px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.initialBtns{
+  margin: 20px;
+
+}
+
+.form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
+  margin: auto 25%;
 }
 
-.App-link {
-  color: #61dafb;
+.input{
+  margin: 10px;
+  border: 1px solid gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form button{
+  margin: 10px 40%;
+  width: 20%;
+  
+}
+
+.result{
+  background-color: rgb(175, 172, 172);
+  margin-top: 70px;
+  width: 50vw;
+  border: 2px solid black;
+}
+
+.result h1{
+  background-color: rgb(175, 172, 172);
+}
+
+.result h2{
+  background-color: rgb(175, 172, 172);
+}
+
+.startBtn{
+  margin: 10px 40%;
+  width: 20%;
+}
+
+.startBtn a{
+  color: black;
+  text-decoration: none;
 }

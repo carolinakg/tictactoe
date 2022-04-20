@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import LoggedHome from "../components/LoggedHome";
+import AppContext from "../context/AppContext";
+import NotLoggedHome from "../components/NotLoggedHome";
 
 function Home(){
+    const {isLogged, setIsLogged} = useContext(AppContext);
     return(
         <div>
-            HOME
+            {isLogged? <LoggedHome/>: <NotLoggedHome/>}
         </div>
     )
 }
